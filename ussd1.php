@@ -1,9 +1,6 @@
 <?php
 $phone=$_POST["phoneNumber"];
 $text=$_POST["text"];
-
-
-
 $response="";
 if ($text=="")//*544#
 {
@@ -55,19 +52,6 @@ elseif ($text=="5*1"){
 elseif ($text=="5*2"){
     $response="END The Capital city of Burundi is Bujumbura";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 header("Content-type:text/plain");
 echo $response;
